@@ -1,38 +1,36 @@
-.App {
-  text-align: center;
+:root{
+    --size: calc(100vw/20)
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+    font-family: Blenny;
+    src: url("./Fonts/Blenny_Trial_Blk.ttf");
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+@font-face {
+    font-family: Brams;
+    src: url("./Fonts/Brams-K7DWW.otf");
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+@font-face {
+    font-family: Buttershine;
+    src: url("./Fonts/ButtershineSerif\ 400.otf");
 }
 
-.App-link {
-  color: #61dafb;
+@font-face {
+    font-family: Blanka;
+    src: url("./Fonts/Blanka-Regular.otf");
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+@font-face {
+    font-family: Greek;
+    src: url("./Fonts/Greek-Freak.ttf");
+}
+
+@font-face {
+    font-family: Barlow;
+    src: url("./Fonts/Barlow-Light.ttf");
 }

@@ -1,0 +1,93 @@
+.parralax{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100vw;
+    height: 200vh;
+}
+
+.parralax .man,
+.parralax .ring,
+.parralax .ring-forward{
+    position: absolute;
+    left: 10%;
+
+}
+
+
+.parralax .man{
+    z-index: 10;
+    top: 15%;
+}
+
+
+.parralax .ring{
+    z-index: 9;
+    top: 10%;
+}
+
+.parralax .ring-forward{
+    z-index: 11;
+    top: 10%;
+}
+
+
+.parralax .statue,
+.parralax .ring-two,
+.parralax .ring-forward-two{
+    position: absolute;
+    right: 10%;
+
+}
+
+
+.parralax .statue{
+    z-index: 10;
+    top: 57%;
+    right: 8%;
+}
+
+.parralax .ring-two{
+    z-index: 9;
+    top: 45%;
+}
+
+.parralax .ring-forward-two{
+    z-index: 11;
+    top: 45%;
+}
+
+
+
+.parralax .woman,
+.parralax .ring-three,
+.parralax .ring-forward-three{
+    position: absolute;
+    left: 10%;
+
+}
+
+
+.parralax .woman{
+    z-index: 10;
+    top: 75%;
+}
+
+
+.parralax .ring-three{
+    z-index: 9;
+    top: 70%;
+}
+
+.parralax .ring-forward-three{
+    z-index: 11;
+    top: 70%;
+}
+
+
+
+.parralax img{
+    width: 500px;
+    height: auto;
+}

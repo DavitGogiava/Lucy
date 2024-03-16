@@ -1,0 +1,134 @@
+.section-two-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.section-two-wrapper .posters-header{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    top: 0;
+}
+
+.posters-header img{
+  z-index: 10;
+}
+
+.posters-header svg{
+  position: absolute;
+  z-index: 1;
+  left: 0;
+}
+
+
+
+
+.wave {
+    position: absolute;
+    top: 100vh;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url("../../Assets/wave2.png");
+    background-size: 1000px 100px;
+    transform: rotate(180deg);
+  }
+  
+  .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWaves 4s linear infinite;
+  }
+  
+  .wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animates 4s linear infinite !important;
+  }
+  
+  .wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWaves 3s linear infinite;
+  }
+  
+  .wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animates 3s linear infinite;
+  }
+  
+  @keyframes animateWaves {
+    0% {
+      background-position-x: 1000px;
+    }
+    100% {
+      background-position-x: 0px;
+    }
+  }
+  
+  @keyframes animates {
+    0% {
+      background-position-x: -1000px;
+    }
+    100% {
+      background-position-x: 0px;
+    }
+  }
+  
+
+
+
+.section-two-wrapper .gallery {
+    margin-top: 100vh;
+    height: 400vh;
+    background: #1e1e1e;
+    position: relative;
+    display: flex;
+    gap: 2vw;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.section-two-wrapper .gallery .column {
+    position: relative;
+    height: 100%;
+    width: 33%;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+.section-two-wrapper .gallery .column .imageContainer {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    border-radius: 0.2vw;
+    overflow: hidden;
+}
+.section-two-wrapper .gallery .column .imageContainer img {
+    object-fit: cover;
+}
+.gallery .column:nth-of-type(1) {
+    top: -20%;
+}
+.gallery .column:nth-of-type(2) {
+    top: -38%;
+}
+.gallery .column:nth-of-type(3) {
+    top: -20%;
+}
