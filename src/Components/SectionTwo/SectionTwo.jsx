@@ -5,19 +5,27 @@ import "./SectionTwo.css"
 import Posters from "../../Assets/Posters.png"
 import DrawLine from '../DrawLine/DrawLine';
 
+import img1 from "../../Assets/Images/1.png"
+import img2 from "../../Assets/Images/2.png"
+import img3 from "../../Assets/Images/3.png"
+import img4 from "../../Assets/Images/4.png"
+import img5 from "../../Assets/Images/5.png"
+import img6 from "../../Assets/Images/6.png"
+
+
 const images = [
-  "1.png",
-  "2.png",
-  "3.png",
-  "4.png",
-  "5.png",
-  "6.png",
-  "3.png",
-  "4.png",
-  "6.png",
-  "2.png",
-  "4.png",
-  "1.png",
+  img1,
+  img2,
+  img3,
+  img4,
+  img5,
+  img6,
+  img3,
+  img4,
+  img6,
+  img2,
+  img4,
+  img1,
 ]
 
 
@@ -92,7 +100,7 @@ const Column = ({ images, y }) => {
         images.map((src, i) => (
           <div key={i} className="imageContainer">
             <img
-              src={`/images/${src}`}
+              src={`${src}`}
               alt='image'
               style={{ width: '100%', height: 'auto' }}
             />
