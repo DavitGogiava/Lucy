@@ -20,8 +20,11 @@
     top: 0;
 }
 
-.posters-header img{
+.posters-header h1{
   z-index: 10;
+  font-size: 300px;
+  color: wheat;
+  font-family: Brams;
 }
 
 .posters-header svg{
@@ -45,28 +48,28 @@
   }
   
   .wave#wave1 {
-    z-index: 1000;
+    z-index: 500;
     opacity: 1;
     bottom: 0;
     animation: animateWaves 4s linear infinite;
   }
   
   .wave#wave2 {
-    z-index: 999;
+    z-index: 499;
     opacity: 0.5;
     bottom: 10px;
     animation: animates 4s linear infinite !important;
   }
   
   .wave#wave3 {
-    z-index: 1000;
+    z-index: 500;
     opacity: 0.2;
     bottom: 15px;
     animation: animateWaves 3s linear infinite;
   }
   
   .wave#wave4 {
-    z-index: 999;
+    z-index: 499;
     opacity: 0.7;
     bottom: 20px;
     animation: animates 3s linear infinite;

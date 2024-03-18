@@ -1,6 +1,7 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import "./SectionOne.css";
 import { motion } from "framer-motion";
+import { Link } from 'react-scroll';
 
 import Profile from "../../Assets/profile.png";
 import Name from "../../Assets/Name4.webm";
@@ -35,7 +36,7 @@ const SectionOne = () => {
   useEffect(() => {
     if (!gridCreated) {
       const numColumns = 20; // Number of columns in the grid
-      const numRows = 9;
+      const numRows = 11;
 
       // Create an array with the item types
       const itemTypes = [
@@ -80,8 +81,12 @@ const SectionOne = () => {
       </div>
 
       <div className="small-nav">
-        <div className="nav-item">Projects</div>
-        <div className="nav-item">Contacts</div>
+        <Link className="nav-item" to="posters" smooth={true} duration={800}>
+          Projects
+        </Link>
+        <Link className="nav-item" to="contacts" smooth={true} duration={800}>
+          Contacts
+        </Link>
       </div>
 
       <div className="grid-container">

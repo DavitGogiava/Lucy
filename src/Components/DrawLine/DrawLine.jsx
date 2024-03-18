@@ -20,7 +20,7 @@ const DrawLine = () => {
         const drawnLength = totalLength * e;
         path.current.style.strokeDasharray = `${drawnLength} ${totalLength}`;
       });
-    }, []);
+    }, [scrollYProgress]);
 
     
 
@@ -57,7 +57,7 @@ const DrawLine = () => {
                   d={pathId}
                   style={{
                     stroke: "url(#gradient)",
-                    strokeWidth: 4,
+                    strokeWidth: 6,
                     strokeDasharray: "0 100%",
                     transition: "stroke-dasharray 0.5s ease"
               }}

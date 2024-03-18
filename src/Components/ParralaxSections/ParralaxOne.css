@@ -44,18 +44,18 @@
 
 .parralax .statue{
     z-index: 10;
-    top: 57%;
-    right: 8%;
+    top: 55%;
+    right: 10%;
 }
 
 .parralax .ring-two{
     z-index: 9;
-    top: 45%;
+    top: 43%;
 }
 
 .parralax .ring-forward-two{
     z-index: 11;
-    top: 45%;
+    top: 43%;
 }
 
 
@@ -89,5 +89,12 @@
 
 .parralax img{
     width: 500px;
+    height: auto;
+}
+
+
+.parralax .ring-two img,
+.parralax .ring-forward-two img{
+    width: 550px;
     height: auto;
 }

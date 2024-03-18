@@ -2,7 +2,7 @@ import React from 'react'
 import "./SectionFour.css"
 const SectionFour = () => {
     return (
-        <div className="section-four-wrapper">
+        <div className="section-four-wrapper" id='contacts'>
             <div className="contact-title">
                 Contact Me.
             </div>

@@ -1,4 +1,4 @@
-import { useRef, useState, useEffect } from "react";
+import { useRef } from "react";
 import "./ParralaxOne.css"
 
 import Astro from "../../Assets/Parralax/astro.webp"
@@ -44,10 +44,10 @@ const ParralaxOne = () => {
         <motion.div className="statue" style={{ y: y1 }}>
             <img src={Statue} alt="" />
         </motion.div>
-        <motion.div className="ring-three" style={{ y: y2 }}>
+        <motion.div className="ring-two" style={{ y: y2 }}>
             <img src={RingTwo} alt="" />
         </motion.div>
-        <motion.div className="ring-forward-three" style={{ y: y2 }}>
+        <motion.div className="ring-forward-two" style={{ y: y2 }}>
             <img src={RingFTwo} alt="" />
         </motion.div>
 
@@ -57,10 +57,10 @@ const ParralaxOne = () => {
         <motion.div className="woman" style={{ y: y1 }}>
             <img src={Woman} alt="" />
         </motion.div>
-        <motion.div className="ring-two" style={{ y: y2 }}>
+        <motion.div className="ring-three" style={{ y: y2 }}>
             <img src={Ring} alt="" />
         </motion.div>
-        <motion.div className="ring-forward-two" style={{ y: y2 }}>
+        <motion.div className="ring-forward-three" style={{ y: y2 }}>
             <img src={RingF} alt="" />
         </motion.div>
 

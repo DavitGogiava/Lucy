@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from 'react';
 import { useTransform, useScroll, motion } from 'framer-motion';
 import "./SectionTwo.css"
 
-import Posters from "../../Assets/Posters.png"
 import DrawLine from '../DrawLine/DrawLine';
 
 import img1 from "../../Assets/Images/1.png"
@@ -68,7 +67,7 @@ const SectionTwo = () => {
         
         <DrawLine />
 
-        <img src={Posters} alt="" />
+        <h1>POSTERS</h1>
       </div>
 
       <div className="waves">
@@ -79,7 +78,7 @@ const SectionTwo = () => {
       </div>
 
 
-        <div ref={gallery} className="gallery">
+        <div ref={gallery} className="gallery" id="posters">
           <Column images={[images[0], images[1], images[2], images[1]]} y={y}/>
           <Column images={[images[3], images[4], images[5], images[2]]} y={y2}/>
           <Column images={[images[6], images[7], images[8], images[3]]} y={y3}/>
@@ -101,7 +100,7 @@ const Column = ({ images, y }) => {
           <div key={i} className="imageContainer">
             <img
               src={`${src}`}
-              alt='image'
+              alt='cont'
               style={{ width: '100%', height: 'auto' }}
             />
           </div>

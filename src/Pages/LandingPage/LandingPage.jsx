@@ -3,7 +3,6 @@ import "./LandingPage.css"
 import SectionOne from "../../Components/SectionOne/SectionOne"
 import SectionTwo from "../../Components/SectionTwo/SectionTwo"
 import SectionThree from "../../Components/SectionThree/SectionThree"
-import Header from '../../Components/Header/Header'
 import SmoothScroll from '../../Utils/SmoothScroll'
 import SectionFour from '../../Components/SectionFour/SectionFour'
 

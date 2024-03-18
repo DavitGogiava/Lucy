@@ -4,9 +4,20 @@
     align-items: center;
     width: 100vw;
     height: 200vh;
-    background-color: #1e1e1e;
+    background-color: black;
     color: wheat;
     position: relative;
+}
+
+.section-three-wrapper .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url("../../Assets/wave2.png");
+    background-size: 1000px 100px;
+    transform: rotate(0);
 }
 
 
