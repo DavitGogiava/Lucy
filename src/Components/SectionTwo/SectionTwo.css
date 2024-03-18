@@ -136,3 +136,75 @@
 .gallery .column:nth-of-type(3) {
     top: -20%;
 }
+
+
+
+
+@media (max-width: 768px) {
+
+  .section-two-wrapper .posters-header{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    top: 0;
+  }
+
+  .posters-header h1{
+    font-size: 90px;
+  }
+
+
+  .wave {
+    top: calc(100vh - 20px);
+    height: 40px;
+    background: url("../../Assets/wave2.png");
+    background-size: 100vw 40px;
+  }
+
+  
+
+  .section-two-wrapper .gallery {
+    margin-top: 100vh;
+    height: 200vh;
+    background: #1e1e1e;
+    position: relative;
+    display: flex;
+    gap: 2vw;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  .section-two-wrapper .gallery .column {
+    
+    position: relative;
+    height: 100%;
+    width: 50%;
+    min-width: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+  }
+  .section-two-wrapper .gallery .column .imageContainer {
+    max-height: 100%;
+    min-height: 250px;
+    width: 100%;
+    position: relative;
+    border-radius: 0.2vw;
+    overflow: hidden;
+  }
+  .section-two-wrapper .gallery .column .imageContainer img {
+    object-fit: cover;
+  }
+  .gallery .column:nth-of-type(1) {
+    top: -6%;
+  }
+  .gallery .column:nth-of-type(2) {
+    top: -19%;
+  }
+
+
+}

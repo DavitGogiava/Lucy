@@ -27,3 +27,17 @@
     color: #C259D7;
 
 }
+
+
+@media (max-width: 768px) {
+
+    .landingpage-wrapper .social-networks p{
+        font-size: 25px;
+        color: wheat;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+        margin-right: 20px;
+        background-color: black;
+        padding: 2px;
+    }
+}

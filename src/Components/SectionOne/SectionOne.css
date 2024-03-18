@@ -224,3 +224,65 @@
 }
 
 
+
+
+@media (max-width: 768px) {
+
+    .section-one-wrapper .small-nav{
+        display: none;
+    }
+    
+    
+    
+    
+    .section-one-wrapper .profile-container {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70vw;
+        height: 53vh;
+        top: 0;
+        z-index: 15;
+        margin-right: 0;
+        pointer-events: none;
+    
+    }
+    
+    
+    .section-one-wrapper .right{
+        width:  100vw;
+        height: 50vh;
+        display: flex;
+        align-items: start;
+    }
+    
+    
+    .section-one-wrapper .right .big-about-me{
+        font-size: 70px;
+        height: 100px;
+    }
+
+    .section-one-wrapper .right .about-me{
+        font-size: 14px;   
+        width: 80vw;
+    }
+
+
+    .video-container {
+        position: absolute;
+        left: 73vw;
+        width: 100px; /* Set the width of the video container */
+        height: 50px; /* Set the height of the video container */
+        z-index: 999;
+    }
+    
+    .video-container video {
+        width: 100%; /* Make the video fill the width of its container */
+        height: 100%; /* Make the video fill the height of its container */
+        object-fit: cover; /* Ensure the video covers the container without distorting */
+    }
+
+
+
+}

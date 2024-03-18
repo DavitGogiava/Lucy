@@ -2,6 +2,7 @@ import React, {useRef, useEffect} from 'react'
 import { useScroll } from 'framer-motion';
 
 
+import {isMobile} from "react-device-detect"
 
 
 const DrawLine = () => {
@@ -57,7 +58,7 @@ const DrawLine = () => {
                   d={pathId}
                   style={{
                     stroke: "url(#gradient)",
-                    strokeWidth: 6,
+                    strokeWidth: isMobile ? 12 : 6,
                     strokeDasharray: "0 100%",
                     transition: "stroke-dasharray 0.5s ease"
               }}

@@ -3,8 +3,10 @@ import "./SectionOne.css";
 import { motion } from "framer-motion";
 import { Link } from 'react-scroll';
 
+import {isMobile} from "react-device-detect"
+
 import Profile from "../../Assets/profile.png";
-import Name from "../../Assets/Name4.webm";
+import Name from "../../Assets/Name5.webm";
 
 const SectionOne = () => {
   const [gridCreated, setGridCreated] = useState(false);
@@ -36,7 +38,7 @@ const SectionOne = () => {
   useEffect(() => {
     if (!gridCreated) {
       const numColumns = 20; // Number of columns in the grid
-      const numRows = 11;
+      const numRows = isMobile ? 51 : 20;
 
       // Create an array with the item types
       const itemTypes = [
@@ -75,8 +77,14 @@ const SectionOne = () => {
   return (
     <div className="section-one-wrapper">
       <div className="video-container">
-        <video autoPlay loop muted>
-          <source src={Name} type="video/mp4" />
+        <video playsinline     
+          autoPlay={true} 
+          loop={true} 
+          controls={false} 
+          playsInline
+          muted 
+          >
+          <source src={Name} type="video/webm" />
         </video>
       </div>
 

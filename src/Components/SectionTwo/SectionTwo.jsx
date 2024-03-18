@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { useTransform, useScroll, motion } from 'framer-motion';
 import "./SectionTwo.css"
+import { isMobile } from 'react-device-detect';
 
 import DrawLine from '../DrawLine/DrawLine';
 
@@ -40,8 +41,12 @@ const SectionTwo = () => {
     offset: ['start end', 'end start']
   })
   const { height } = dimension;
-  const y = useTransform(scrollYProgress, [0, 1], [0, height * 3.3])
-  const y2 = useTransform(scrollYProgress, [0, 1], [0, height * 2])
+
+  const var1 = isMobile ? 0.5 : 3.3
+  const var2 = isMobile ? 0.9 : 2
+
+  const y = useTransform(scrollYProgress, [0, 1], [0, height * var1])
+  const y2 = useTransform(scrollYProgress, [0, 1], [0, height * var2])
   const y3 = useTransform(scrollYProgress, [0, 1], [0, height * 3.3])
 
   useEffect( () => {
@@ -79,9 +84,17 @@ const SectionTwo = () => {
 
 
         <div ref={gallery} className="gallery" id="posters">
-          <Column images={[images[0], images[1], images[2], images[1]]} y={y}/>
-          <Column images={[images[3], images[4], images[5], images[2]]} y={y2}/>
-          <Column images={[images[6], images[7], images[8], images[3]]} y={y3}/>
+          {isMobile ? 
+          <>
+            <Column images={[images[0], images[1], images[2], images[3], images[4]]} y={y}/>
+            <Column images={[images[6], images[7], images[8], images[0], images[2]]} y={y2}/>
+          </> 
+          :
+          <>
+            <Column images={[images[0], images[1], images[2], images[1]]} y={y}/>
+            <Column images={[images[3], images[4], images[5], images[2]]} y={y2}/>
+            <Column images={[images[6], images[7], images[8], images[3]]} y={y3}/>
+          </>}
         </div>
     </div>
   )

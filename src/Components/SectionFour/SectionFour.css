@@ -69,3 +69,69 @@
 }
 
 
+
+@media (max-width: 768px) {
+
+    .section-four-wrapper .contact-title{
+        display: flex;
+        position: absolute;
+        top: 15%;
+        left: 2%;
+        font-size: 80px;
+        color: black;
+        font-family: Blenny;
+    }
+    
+    .section-four-wrapper .other-info{
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        left: 4%;
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        margin-bottom: 50px;
+    
+    }
+    
+    .other-info h3{
+        font-family: Barlow;
+        font-size: 20px;
+        margin: 0;
+        margin-top: 10px;
+    }
+    
+    
+    .section-four-wrapper .contact-list{
+        display: flex;
+        position: absolute;
+        bottom: 20%;
+        left: 4%;
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    
+    .contact-list h2{
+        font-family: Buttershine;
+        margin: 0;
+        font-size: 25px;
+    }
+    
+    .contact-list p{
+        font-family: Buttershine;
+        margin: 0;
+        margin-top: 10px;
+        font-size: 20px;
+        transition: 0.4s ease-in-out;
+        cursor: pointer;
+    }
+    
+    .contact-list p:hover{
+        color: rgb(171, 154, 123);
+    }
+    
+
+
+}
