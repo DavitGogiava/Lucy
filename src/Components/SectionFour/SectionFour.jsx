@@ -7,7 +7,7 @@ const SectionFour = () => {
                 Contact Me.
             </div>
             <div className="other-info">
-                <h3>Lucikoluciko@gmail.com</h3>
+                <h3>TestDesignDG@gmail.com</h3>
                 <h3>Tbilisi, Georgia</h3>
             </div>
             <div className="contact-list">

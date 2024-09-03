@@ -15,7 +15,7 @@
     left: 0;
     width: 100%;
     height: 100px;
-    background: url("../../Assets/wave2.png");
+    background: url("../../Assets/wave2.webp");
     background-size: 1000px 100px;
     transform: rotate(0);
 }

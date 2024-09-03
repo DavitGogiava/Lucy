@@ -5,7 +5,7 @@ import { Link } from 'react-scroll';
 
 import {isMobile} from "react-device-detect"
 
-import Profile from "../../Assets/profile.png";
+import Profile from "../../Assets/profile.webp";
 import Name from "../../Assets/Name5.webm";
 
 const SectionOne = () => {

@@ -5,12 +5,12 @@ import { isMobile } from 'react-device-detect';
 
 import DrawLine from '../DrawLine/DrawLine';
 
-import img1 from "../../Assets/Images/1.png"
-import img2 from "../../Assets/Images/2.png"
-import img3 from "../../Assets/Images/3.png"
-import img4 from "../../Assets/Images/4.png"
-import img5 from "../../Assets/Images/5.png"
-import img6 from "../../Assets/Images/6.png"
+import img1 from "../../Assets/Images/1z.webp"
+import img2 from "../../Assets/Images/2z.webp"
+import img3 from "../../Assets/Images/3z.webp"
+import img4 from "../../Assets/Images/4z.webp"
+import img5 from "../../Assets/Images/5z.webp"
+import img6 from "../../Assets/Images/6z.webp"
 
 
 const images = [
