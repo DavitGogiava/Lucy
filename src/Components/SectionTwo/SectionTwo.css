@@ -106,6 +106,7 @@
     padding: 0;
     box-sizing: border-box;
     overflow: hidden;
+    width: 100vw;
 }
 .section-two-wrapper .gallery .column {
     position: relative;

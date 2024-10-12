@@ -1,22 +1,24 @@
 import "./App.css";
-import React from "react";
+import React, { lazy } from "react";
 import { Route, Routes } from "react-router-dom";
-
 import LandingPage from "./Pages/LandingPage/LandingPage";
 
+const SmoothScroll = lazy(() => import("./Utils/SmoothScroll"));
 function App() {
   return (
     <div className="App">
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              <LandingPage />
-            </>
-          }
-        />
-      </Routes>
+      <SmoothScroll>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <LandingPage />
+              </>
+            }
+          />
+        </Routes>
+      </SmoothScroll>
     </div>
   );
 }
